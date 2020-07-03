@@ -21,6 +21,15 @@
     },
     {
       "path": "./projects/components/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/elements/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/elements/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/elements/e2e/tsconfig.json"
     }
 ]
 }

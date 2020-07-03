@@ -7,18 +7,24 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build:elements": "ng build --prod --project elements --output-hashing none && npm run pack:elements && cp projects/elements/package.json dist/elements",
+    "pack:elements": "cat ./dist/elements/{runtime,polyfills,main}.js > dist/elements/elements.js && ls -lah dist/elements/elements.js",
+    "build:components": "ng build --prod --project components --watch=true"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "~10.0.0",
+    "@angular/cdk": "^10.0.1",
     "@angular/common": "~10.0.0",
     "@angular/compiler": "~10.0.0",
     "@angular/core": "~10.0.0",
+    "@angular/elements": "^10.0.1",
     "@angular/forms": "~10.0.0",
     "@angular/platform-browser": "~10.0.0",
     "@angular/platform-browser-dynamic": "~10.0.0",
     "@angular/router": "~10.0.0",
+    "document-register-element": "^1.7.2",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"

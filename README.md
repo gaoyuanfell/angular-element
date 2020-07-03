@@ -1,27 +1,19 @@
-# AngularElement
+https://notiz.dev/blog/create-a-component-library-for-angular-and-the-web#configure-angular-elements
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.0.
+ng g library components
 
-## Development server
+ng build components
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+ng g application elements
 
-## Code scaffolding
+ng add @angular/elements --project elements
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+If you want to publish your components as Custom Elements cd into ./projects/elements and create a package.json using
+npm init
 
-## Build
+// angular 中如何使用 web component
+<ng-container \*axLazyElement></ng-container>
+https://medium.com/@tomastrajan/the-best-way-to-lazy-load-angular-elements-97a51a5c2007
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+// 使用 ViewEngine 和 Ivy 手动延迟加载 Angular 模块
+https://juristr.com/blog/2019/10/lazyload-module-ivy-viewengine/
