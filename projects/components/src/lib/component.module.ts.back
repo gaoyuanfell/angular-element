@@ -1,0 +1,9 @@
+import { ScanModule } from './scan/scan.module';
+import { NgModule } from '@angular/core';
+
+@NgModule({
+  declarations: [],
+  imports: [ScanModule],
+  exports: [ScanModule],
+})
+export class ComponentModule {}
