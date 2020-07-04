@@ -17,3 +17,5 @@ https://medium.com/@tomastrajan/the-best-way-to-lazy-load-angular-elements-97a51
 
 // 使用 ViewEngine 和 Ivy 手动延迟加载 Angular 模块
 https://juristr.com/blog/2019/10/lazyload-module-ivy-viewengine/
+
+https://en.wikipedia.org/wiki/Grayscale

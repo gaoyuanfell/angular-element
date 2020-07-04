@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Injector, DoBootstrap, ApplicationRef } from '@angular/core';
 import { createCustomElement } from '@angular/elements';
@@ -7,7 +8,7 @@ import { componentsList } from 'components'; // ComponentModule,
 import { AppComponent, TestComponent } from './app.compoent';
 
 @NgModule({
-  imports: [BrowserModule, OverlayModule], //PortalModule ComponentModule
+  imports: [CommonModule, BrowserModule, OverlayModule], //PortalModule ComponentModule
 })
 export class AppModule implements DoBootstrap {
   constructor(private injector: Injector) {}
